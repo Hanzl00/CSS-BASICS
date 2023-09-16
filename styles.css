@@ -1,0 +1,52 @@
+header {
+    background-color: rgb(94, 255, 0);
+    text-align: center; 
+    font-family: 'Lexend', sans-serif; 
+    font-style: oblique;
+}
+
+tr {
+    color: white; 
+    text-align: center;
+    background-color: darkcyan; 
+    font-family: 'Mooli', sans-serif;
+    font-size: 150%;
+}
+header {
+    background-color: rgb(94, 255, 0);
+    text-align: center; 
+    font-family: 'Lexend', sans-serif; 
+    font-style: oblique;
+}
+
+tr {
+    color: white; 
+    text-align: center;
+    background-color: darkcyan; 
+    font-family: 'Mooli', sans-serif;
+    font-size: 150%;
+}
+
+
+#button {
+    background-color: yellow;
+    color: rgb(0, 113, 128);
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 500px;
+    font-family: 'Lexend', sans-serif;
+}
+
+.link {
+    background-color: greenyellow; !important;
+    font-size: 80%;
+}
+
+footer {
+    background-color: seagreen;
+    text-align: right;
+    font-family: 'Lexend', sans-serif;
+}

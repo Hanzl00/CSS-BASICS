@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@700;900&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet"> 
+    
+
+
+    <style>
+
+        .left {
+            text-align: left;
+        }
+        
+        .link {
+            background-color: yellow
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Top 10 Youtube Channels</h1>
+        <h2>Rated by Subscribers</h2>
+        <p>Source: socialblade.com</p> 
+        <button id="button" onclick="window.location.href='https://socialblade.com/';" color="black" target="_blank">
+            Visit Social Blade
+        </button>
+    </header>
+    
+
+    <main>
+        
+        <h2>TOP 10 List</h2>
+
+    <table style="width: 100%">
+        
+        <tr>
+            <th>Rank</th>
+            <th>Username</th>
+            <th>Subs</th>
+            <th>Visit Link</th>
+        </tr>
+        
+        
+        <tr>
+            <td> 1st </td>
+            <td id="change" class="left"> <img src="data:image/png;base64,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" style="width: 90px;">T-Series </td>
+            <td> 249M </td>
+            <td class="link"><a href="https://www.youtube.com/@tseries" target="_blank" style="text-decoration: none;">T-Series</a></td>
+        </tr>
+        <tr>
+            <td> 2nd </td>
+            <td class="left"> <img src="https://yt3.ggpht.com/ytc/AOPolaSqRAadc5Tv116Y-UfQ--ZLK3bFTep0ZH1_aoLlTA=s88-c-k-c0x00ffffff-no-rj"> MrBeast </td>
+            <td> 183M </td>
+            <td class="link"><a href="https://www.youtube.com/@MrBeast" target="_blank" style="text-decoration: none;">MrBeast</a></td>
+        </tr>
+        <tr>
+            <td> 3rd </td>
+            <td class="left"> <img src="https://yt3.ggpht.com/CctvYaAE8uFnSs-l3yRC8LdvGnXkh-wkj1szh09g2AroR-NMeWJI_eIJCEHJd6oGGaBmG-YB=s88-c-k-c0x00ffffff-no-rj"> YouTube Movies</td>
+            <td> 174M </td>
+            <td class="link"class="link"><a href="https://www.youtube.com/channel/UClgRkhTL3_hImCAmdLfDE4g" target="_blank" style="text-decoration: none;">YouTube Movies</a></td>
+        <tr>
+            <td> 4th </td>
+            <td class="left"> <img src="https://yt3.ggpht.com/ytc/AOPolaRxd0DEuTsFcyk0wEHdVMk4r7nZhv_7A3AgQ7ndUA=s88-c-k-c0x00ffffff-no-rj-mo"> Cocomelon - Nursery Rhymes </td>
+            <td> 165M </td>
+            <td class="link"><a href="https://www.youtube.com/channel/UCbCmjCuTUZos6Inko4u57UQhttps://www.youtube.com/channel/UCbCmjCuTUZos6Inko4u57UQ" target="_blank" style="text-decoration: none;">Cocomelon - Nursery Rhymes</a></td>
+        </tr>
+        <tr>
+            <td> 5th </td>
+            <td class="left"> <img src="https://yt3.ggpht.com/eu051krrRNQMMi5h6ynfnvhFJzxzSKulJQ42g5v72MQ9Bvv8KdpNIa6yM-0iGpnDgSF0itAD=s88-c-k-c0x00ffffff-no-rj"> SET India </td>
+            <td> 162M </td>
+            <td class="link"><a href="https://www.youtube.com/@SETIndia" target="_blank" style="text-decoration: none;">SET India</a></td>
+        </tr>
+        <tr>
+            <td> 6th </td>
+            <td class="left"> <img src="https://yt3.ggpht.com/vCqmJ7cdUYpvR0bqLpWIe8ktaor4QafQLlfQyTuZy-M9W_YafT8Wo9kdsKL2St1BrkMRpVSJgA=s88-c-k-c0x00ffffff-no-rj"> Music </td>
+            <td> 119M </td>
+            <td class="link"><a href="https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ" target="_blank" style="text-decoration: none;">Music</a></td>
+        </tr>
+        <tr>
+            <td> 7th </td>
+            <td class="left"> <img src="https://yt3.ggpht.com/ytc/AOPolaRqUJvdKqKJnSBQm_3kGeR5rM7t87X5wPd808QNBg=s88-c-k-c0x00ffffff-no-rj"> ✿ Kids Diana Show </td>
+            <td> 113M</td>
+            <td class="link"><a href="https://www.youtube.com/@KidsDianaShow" target="_blank" style="text-decoration: none;">✿ Kids Diana Show</a></td>
+        </tr>
+        <tr>
+            <td> 8th </td>
+            <td class="left"> <img src="https://yt3.ggpht.com/5oUY3tashyxfqsjO5SGhjT4dus8FkN9CsAHwXWISFrdPYii1FudD4ICtLfuCw6-THJsJbgoY=s88-c-k-c0x00ffffff-no-rj"> PewDiePie </td>
+            <td> 111M</td>
+            <td class="link"class="link"><a href="https://www.youtube.com/@PewDiePie" target="_blank" style="text-decoration: none;">PewDiePie</a></td>
+        </tr>
+        <tr>
+            <td> 9th </td>
+            <td class="left"> <img src="https://yt3.ggpht.com/ytc/AOPolaSKK21B8Br391L--IATxx17fjuK_oEnPrHr6VoEag=s88-c-k-c0x00ffffff-no-rj"> Like Nastya </td>
+            <td> 107M</td>
+            <td class="link"><a href="https://www.youtube.com/@LikeNastyaofficial" target="_blank" style="text-decoration: none;">Like Nastya</a></td>
+        </tr>
+        <tr>
+            <td> 10th </td>
+            <td class="left"> <img src="https://yt3.ggpht.com/RlnpUc0SBCmYvseTqUqAfYeyHw0nHcmqQIVS0vMcTKpk3gQAY0ZZY1JpUxxjLPAYROhDYKub=s88-c-k-c0x00ffffff-no-rj"> Vlad and Niki </td>
+            <td> 101M</td>
+            <td class="link"><a href="https://www.youtube.com/@VladandNiki" target="_blank" style="text-decoration: none;">Vlad and Niki</a></td>
+        </tr>
+        
+    </table>
+
+    </main>
+
+
+</body>
+
+<footer>
+    <p>Author:Hans Doria</p>
+    <p>You can folow my github account</p>
+    <p><a href="https://github.com/Hanzl00" target="_blank">https://github.com/Hanzl00</a></p>
+</footer>
+
+</html>
